@@ -1,0 +1,261 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+:root {
+	--primary: #1da382;
+	--secondary: #8fffe3;
+	--tertiary: #6ff0cf;
+	--dark-yellow: #d9a338;
+	--orange: #a3472a;
+	--black: #333;
+	--white: #fff;
+	--red: #f08d6e;
+}
+
+html {
+	/* 1rem = 10px */
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+	padding-bottom: 2rem;
+}
+
+p {
+	margin: 1rem 0;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+/* Utility clases */
+.container {
+	margin: 0 auto;
+	max-width: 1800px;
+	padding: 0 2rem;
+}
+
+.text-primary {
+	font-size: 2rem;
+}
+
+.red-text {
+	color: var(--orange);
+}
+
+.btn {
+	display: inline-block;
+	font-size: 1.8rem;
+	color: #fff;
+	background: var(--primary);
+	padding: 1.3rem 2rem;
+	border: none;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background: var(--secondary);
+	color: var(--dark-yellow);
+}
+
+/* Navigation */
+
+.navigation {
+	width: 100%;
+	background-color: var(--primary);
+
+	height: 6rem;
+}
+
+.navigation a {
+	color: var(--white);
+}
+
+.navigation .navigation__container {
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+	/*background-color: green;*/
+}
+
+.navigation h1 {
+	padding: 0;
+	align-self: center;
+	font-size: 2rem;
+}
+
+.navigation .navigation__list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.navigation .navigation__list li {
+	display: flex;
+}
+
+.navigation .navigation__list a {
+	padding: 2rem;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.navigation .navigation__list a:hover,
+.navigation .navigation__list a.current {
+	background: var(--secondary);
+	color: var(--dark-yellow);
+}
+
+#showcase {
+	background: url('../images/Casa_Mica.png') no-repeat center center/cover;
+	height: calc(100vh - 6rem);
+	position: relative;
+}
+
+#showcase .showcase__container {
+	border: 3px solid var(--primary);
+	border-radius: 25px;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 4rem 5rem;
+	background-color: rgba(51, 51, 51, 0.7);
+}
+
+#showcase .showcase__content {
+	color: #fff;
+	text-align: center;
+}
+
+#showcase .showcase__content h1 {
+	font-size: 6rem;
+	color: var(--orange);
+	font-weight: bold;
+}
+
+/*Home info*/
+#home-info {
+	text-align: center;
+	padding: 5rem 4rem;
+	/*background-color: var(--secondary);*/
+}
+
+#home-info h2 {
+	font-size: 4rem;
+	margin-bottom: 3rem;
+}
+
+.home-info__container {
+	display: flex;
+}
+
+.home-info__img {
+	flex-basis: 50%;
+}
+.home-info__content {
+	flex-basis: 50%;
+}
+
+.home-info__container .home-info__img img {
+	width: 100%;
+}
+
+.home-info__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	align-self: center;
+	background-color: var(--white);
+	padding: 4rem;
+}
+
+.home-info__content p {
+	font-size: 1.5rem;
+}
+
+.home-info__content p span {
+	color: var(--red);
+}
+
+.home-info__content a {
+	margin-top: 3rem;
+}
+
+/*services*/
+#services {
+	text-align: center;
+	background-color: var(--secondary);
+	padding: 5rem 0;
+}
+
+#services h2 {
+	font-size: 4rem;
+	margin-bottom: 3rem;
+}
+
+.services__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 60px;
+}
+
+.services__container > * {
+	flex-basis: 100%;
+}
+
+.services__container .service p {
+	font-size: 2rem;
+}
+
+.services__container .service p span {
+	font-size: 2.5rem;
+	color: var(--orange);
+	font-weight: bold;
+}
+
+.services__container .service-picture {
+	height: 346px;
+}
+
+.services__container .service-picture img {
+	height: 100%;
+}
+
+/*Footer*/
+
+#footer {
+	text-align: center;
+	background-color: var(--primary);
+	color: #fff;
+	padding: 2rem;
+}
+
+#footer p {
+	margin: 0;
+	font-size: 1.5rem;
+}
