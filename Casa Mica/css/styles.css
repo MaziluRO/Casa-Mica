@@ -219,7 +219,7 @@ img {
 
 .services__container {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-evenly;
 	gap: 60px;
 }
