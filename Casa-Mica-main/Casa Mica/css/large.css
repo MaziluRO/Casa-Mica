@@ -1,0 +1,16 @@
+html {
+	/*1rem = 9px */
+	font-size: 56.25%;
+}
+
+#showcase .showcase__container {
+	width: 80%;
+}
+
+#showcase .showcase__content h1 {
+	font-size: 5rem;
+}
+
+#showcase .showcase__content p {
+	font-size: 2rem;
+}
