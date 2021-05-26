@@ -1,0 +1,45 @@
+#showcase .showcase__content h1 {
+	font-size: 4rem;
+}
+
+#showcase .showcase__content p {
+	font-size: 1.6rem;
+}
+
+#showcase .showcase__container {
+	width: 90%;
+}
+
+#home-info h2,
+#services h2 {
+	font-size: 3rem;
+}
+
+.services__container .service-picture {
+	height: 246px;
+}
+
+/* ********* */
+/* ********* */
+/*Contact page   */
+#contact-form h1 {
+	font-size: 3rem;
+}
+
+#contact-form p {
+	font-size: 1.5rem;
+}
+
+#contact-form .form-container .form-picture {
+	display: none;
+}
+
+#contact-form .form-container form {
+	flex-basis: 100%;
+}
+
+#contact-form .form-container form .btn {
+	display: block;
+	margin-top: 3rem;
+	width: 100%;
+}
