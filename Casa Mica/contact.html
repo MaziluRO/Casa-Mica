@@ -57,6 +57,7 @@
 						<li class="navigation__item">
 							<a href="about.html" class="navigation__link">About Us</a>
 						</li>
+						<!--
 						<li class="navigation__item">
 							<a href="despre.html" class="navigation__link"
 								>Otilia Techirghiol</a
@@ -67,6 +68,7 @@
 								>Coiful de Aur Slanic Prahova</a
 							>
 						</li>
+						-->
 						<li class="navigation__item">
 							<a href="contact.html" class="navigation__link">Contact</a>
 						</li>
@@ -80,7 +82,7 @@
 				<h1>Contact Us</h1>
 				<p>Please fill out the form below to contact us</p>
 				<div class="form-container">
-					<form action="process.php" autocomplete="off">
+					<form action="process.php" method="POST" autocomplete="off">
 						<div class="form-group">
 							<label for="name">Name</label>
 							<input type="text" name="name" id="name" />
@@ -115,15 +117,17 @@
 				<div class="contact">
 					<i class="fas fa-phone fa-3x"></i>
 					<h3>Phone Number</h3>
-					<p>0749 114 663</p>
+					<a href="tel:0040726150412" class="phone-number">0040726150412</a>
 				</div>
 				<div class="contact">
 					<i class="fas fa-envelope fa-3x"></i>
 					<h3>Email Address</h3>
+					<!--<a href="mailto: pensiuneacasamica@gmail.com">Send Email</a>-->
 					<p>pensiuneacasamica@gmail.com</p>
 				</div>
 			</div>
 		</section>
+
 		<div class="gmap_canvas">
 			<iframe
 				width="100%"
@@ -137,6 +141,16 @@
 			>
 			</iframe>
 		</div>
+		<a
+			href="https://api.whatsapp.com/send?
+			phone=0040726150412
+			&text=Salut. Cu ce te putem ajuta?"
+			target="_blank"
+			title="click to open whatsapp chat"
+			class="whatsapp-button"
+		>
+			&nbsp;</a
+		>
 
 		<footer id="footer">
 			<p>Casa Mica &copy; 2020, All Rights Reserved</p>
