@@ -8,7 +8,7 @@ html {
 	--secondary: #8fffe3;
 	--tertiary: #6ff0cf;
 	--dark-yellow: #d9a338;
-	--orange: #a3472a;
+	--orange: #ffa17a;
 	--black: #333;
 	--white: #fff;
 	--red: #f08d6e;
@@ -26,8 +26,8 @@ nav {
 .navigation .nav-links {
 	position: fixed;
 	width: 100%;
-	right: -100%;
-	top: 6rem;
+	left: 0;
+	top: -100%;
 	height: calc(100vh - 6rem);
 	background: var(--dark-green);
 	z-index: 1;
@@ -51,7 +51,7 @@ nav {
 }
 
 #check:checked ~ .nav-links {
-	right: 0;
+	top: 6rem;
 }
 
 .home-info__container {
@@ -89,4 +89,10 @@ nav {
 
 #contact-info .contact-info__container .contact i {
 	font-size: 6rem;
+}
+
+#contact-form .form-container .form-picture {
+	align-self: center;
+	margin-bottom: 6rem;
+	margin-top: 0;
 }
