@@ -11,10 +11,14 @@
 	--secondary: #8fffe3;
 	--tertiary: #6ff0cf;
 	--dark-yellow: #d9a338;
-	--orange: #a3472a;
+	--orange: #ffa17a;
+	/*--orange: #a3472a;*/
 	--black: #333;
 	--white: #fff;
 	--red: #f08d6e;
+	--new-red: #d97548;
+	--orange-text: #d97548;
+	--light-green-background: #e6fff5;
 }
 
 html {
@@ -62,10 +66,33 @@ img {
 	font-size: 2rem;
 }
 
-.red-text {
-	color: var(--orange);
+section#home-info .title-section {
+	position: relative;
+	color: var(--orange-text);
+	padding-bottom: 10px;
 }
 
+section#home-info .title-section::before {
+	content: '';
+	background-color: #ffa17a;
+	width: 60%;
+	height: 3px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+}
+/* 
+section#home-info .title-section::after {
+	content: '';
+	background-color: #ffa17a;
+	width: 35%;
+	height: 2px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -10px;
+} */
 .btn {
 	display: inline-block;
 	font-size: 1.8rem;
@@ -78,7 +105,7 @@ img {
 
 .btn:hover {
 	background: var(--secondary);
-	color: var(--dark-yellow);
+	color: var(--orange);
 }
 
 /* Navigation */
@@ -125,7 +152,7 @@ img {
 }
 
 .navigation .navigation__list li {
-	margin-left: 2.5rem;
+	margin-left: 5rem;
 	position: relative;
 }
 
@@ -225,6 +252,8 @@ header {
 
 .home-info__container .home-info__img img {
 	width: 100%;
+	border-radius: 20px;
+	box-shadow: -3px 2px 6px 3px rgb(0 0 0 / 20%);
 }
 
 .home-info__content {
@@ -238,11 +267,12 @@ header {
 }
 
 .home-info__content p {
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 }
 
 .home-info__content p span {
-	color: var(--red);
+	color: var(--orange-text);
+	font-weight: bold;
 }
 
 .home-info__content a {
@@ -252,13 +282,14 @@ header {
 /*services*/
 #services {
 	text-align: center;
-	background-color: var(--secondary);
+	background-color: var(--light-green-background);
 	padding: 5rem 0;
 }
 
 #services h2 {
 	font-size: 4rem;
 	margin-bottom: 3rem;
+	color: var(--primary);
 }
 
 .services__container {
@@ -278,7 +309,7 @@ header {
 
 .services__container .service p span {
 	font-size: 2.5rem;
-	color: var(--orange);
+	color: var(--primary);
 	font-weight: bold;
 }
 
@@ -307,21 +338,29 @@ header {
 /* ********* */
 /* ********* */
 /*Contact page   */
-#contact-form {
+#section-container {
+	height: calc(100vh - 6rem);
+	width: 100%;
 	margin-top: 6rem;
+}
+
+#contact-form {
 	padding: 4rem 0;
-	/*height: calc(100vh - 12rem);*/
+	margin-top: 6rem;
+	/*margin-top: 5%;
+	height: calc(100vh - 12rem);*/
 }
 
 #contact-form h1 {
 	font-size: 4rem;
-	color: var(--orange);
+	color: var(--primary);
 	padding: 0;
 }
 
 #contact-form p {
 	font-size: 1.7rem;
 	margin-bottom: 3rem;
+	color: var(--primary);
 }
 
 #contact-form .form-container {
@@ -367,8 +406,9 @@ header {
 }
 
 #contact-info {
+	margin-top: 2.6rem;
 	padding: 4rem 0;
-	background-color: var(--secondary);
+	background-color: var(--light-green-background);
 }
 
 #contact-info .contact-info__container {
@@ -384,6 +424,11 @@ header {
 
 #contact-info .contact-info__container .contact i {
 	font-size: 5rem;
+	color: var(--primary);
+}
+
+#contact-info .contact-info__container .contact .phone-number {
+	font-size: 2rem;
 }
 
 #contact-info .contact-info__container .contact h3 {
@@ -394,4 +439,14 @@ header {
 
 #contact-info .contact-info__container .contact p {
 	font-size: 1.5rem;
+}
+
+.whatsapp-button {
+	position: fixed;
+	bottom: 65px;
+	right: 20px;
+	background-image: url(../images/whatsapp_final.png);
+	background-size: contain;
+	width: 50px;
+	height: 50px;
 }
