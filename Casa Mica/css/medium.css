@@ -163,9 +163,13 @@ nav {
 /*room  gallery */
 .room-gallery .gallery__container {
 	flex-direction: column;
-	gap: 60px;
+	gap: unset;
 }
 
 .room-gallery .gallery__container .gallery-picture {
 	width: 70%;
+}
+
+.room-gallery .gallery__container .gallery-picture:not(:first-child) {
+	margin-top: 40px;
 }
