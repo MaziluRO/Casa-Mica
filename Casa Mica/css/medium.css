@@ -78,28 +78,36 @@ nav {
 
 .offers__container {
 	flex-direction: column;
-	gap: 60px;
+	gap: unset;
 }
 
 .offers__container {
 	align-items: center;
 }
 
-.offers__container > * {
+.offers__container .offer {
 	display: flex;
 	flex-direction: column;
 	width: 70%;
 	text-align: center;
 }
 
+.offers__container .offer:not(:first-child) {
+	margin-top: 60px;
+}
+
 /*Rooms*/
 #rooms .rooms__container {
 	flex-direction: column;
-	gap: 60px;
+	gap: unset;
 }
 
 #rooms .rooms__container .room {
 	width: 70%;
+}
+
+#rooms .rooms__container .room:not(:first-child) {
+	margin-top: 60px;
 }
 
 /* ********* */
