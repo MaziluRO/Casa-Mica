@@ -239,7 +239,12 @@ img {
 	.navigation__container
 	.navigation__list
 	.list-item.dropdown-menu:hover
-	.dropdown-list {
+	.dropdown-list,
+.navigation
+	.navigation__container
+	.navigation__list
+	.list-item.dropdown-menu:active
+	.dropdown-list{
 	opacity: 1;
 	visibility: visible;
 }
